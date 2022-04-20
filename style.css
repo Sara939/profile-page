@@ -1,10 +1,12 @@
 body {
-    background-image: url();
+    background-image: url(foto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y:center;
     margin: 0;
     font-family: sans-serif;
-    color: black;
+    color: rgb(238, 224, 191);
+    font-size: 3vh;
 
 }
 
@@ -24,7 +26,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
     padding: 0 10px;
     min-height: 15vh;
     text-decoration: none;
@@ -32,6 +33,9 @@ body {
 
 a{
     text-decoration: none;
+    border-radius: 10%;
+    color: rgb(238, 224, 191);
+    background-color: rgba(0, 0, 0, 0.434);
 }
 
 .sidebar {
@@ -40,55 +44,60 @@ a{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    font-size: xx-large;
-    align-items: center;
     justify-content: space-around;
-
+    background-color:  rgba(255, 19, 19, 0.603);
+    backround-r
+    
 }
 
 #main div {
     grid-area: main;
-    border: 1px solid black;
-    font-size: 3.5vh;
+    
 }
 
 .front {
     display: flex;
-    justify-content: flex-start;
     padding: 10px;
+    font-size: 3.5vh;
+    justify-items: flex-start;
 }
 
 .pic {
+    padding: 10px;
     height: 20vh;
+    width: 20vh;
     border-radius: 100%;
     transition: all 3s;
 }
 
 .pic:hover {
     height: 25vh;
-    filter: drop-shadow(20px 10px 2px rgba(59, 83, 93, 0.516));
+    width: 25vh;
+    filter: drop-shadow(20px 10px 5px rgba(255, 19, 19, 0.447));
 }
 
 .details {
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0);
     margin: 0;
+    line-height: 5vh;
 }
 
 .projects {
     direction: rtl;
-    background-color: rgba(195, 94, 17, 0.457);
-
+    padding-right: 5vw;
+    list-style-type:none;
+    filter: opacity(40%);
 }
 
 img {
     height: 13vh;
-    border-radius: 20%;
+    border-radius: 10%;
     width: 10vw;
 }
 
 .info {
     display: flex;
-    align-items: center;
+    justify-content: center;
 
 }
 
@@ -117,9 +126,8 @@ img {
 
 #footer {
         grid-area: footer;
-        background-color: black;
         min-height: 10vh;
         display: flex;
         justify-content: space-around;
-
+        color: rgb(238, 224, 191);
     }
