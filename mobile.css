@@ -1,0 +1,144 @@
+    body {
+        background-image: url(foto.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        margin: 0;
+        font-family: sans-serif;
+        color: rgb(238, 224, 191);
+        font-size: 3vh;
+    
+    }
+    
+    #layout {
+        display: grid;
+        grid-template-areas:
+            'header header header header'
+            'sidebar main main main'
+            'sidebar main main main'
+            'sidebar main main main'
+            'sidebar main main main'
+            'footer footer footer footer';
+    }
+    
+    .header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(238, 224, 191);
+        background-color: rgba(0, 0, 0, 0.434);
+    }
+    
+    
+    .sidebar {
+        grid-area: sidebar;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        max-width:10vh;
+        justify-content: space-around;
+        background-color: rgba(255, 19, 19, 0.603);
+
+    }
+    
+    #main div{
+        grid-area: main;
+    }
+    
+    .front {
+        display: flex;
+        font-size: 3.5vh;
+        justify-items: flex-start;
+    }
+    
+    .pic {
+        padding: 10px;
+        height: 20vh;
+        width: 20vh;
+        border-radius: 100%;
+        transition: all 3s;
+    }
+    
+    .pic:hover {
+        height: 25vh;
+        width: 25vh;
+        filter: drop-shadow(20px 10px 5px rgba(255, 19, 19, 0.447));
+    }
+    
+    .details {
+        background-color: rgba(127, 255, 212, 0);
+        margin: 0;
+        line-height: 5vh;
+    }
+    
+    .projects {
+        list-style-type: none;
+        filter: opacity(60%);
+        display: flex;
+        justify-content:space-around;
+    }
+    
+    img {
+        height: 15vh;
+        width: 15vw;
+        border-radius: 10%;
+
+    }
+    
+    
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;}
+    
+    
+    #gallery {
+        height: 30vh;
+        width: 100vh;
+        background-size: cover;
+        background-position-y: center;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 3s;
+       
+    
+    }
+    
+    @keyframes move {
+        0% {
+            background-image: url(pok.jpg);
+        }
+    
+        25% {
+            background-image: url(mohamad.jpg);
+        }
+    
+        50% {
+            background-image: url(sasha.jpg);
+        }
+    
+        75% {
+            background-image: url(sagu.jpg);
+        }
+    
+        100% {
+            background-image: url(valeriia.jpg);
+        }
+    
+    }
+    
+    
+    #footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-around;
+        color: rgb(238, 224, 191);
+    }

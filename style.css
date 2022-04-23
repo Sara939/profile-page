@@ -2,7 +2,7 @@ body {
     background-image: url(foto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y:center;
+    background-position-y: center;
     margin: 0;
     font-family: sans-serif;
     color: rgb(238, 224, 191);
@@ -31,12 +31,13 @@ body {
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
     border-radius: 10%;
     color: rgb(238, 224, 191);
     background-color: rgba(0, 0, 0, 0.434);
 }
+
 
 .sidebar {
     grid-area: sidebar;
@@ -44,14 +45,13 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color:  rgba(255, 19, 19, 0.603);
-    backround-r
-    
+    background-color: rgba(255, 19, 19, 0.603);
+
 }
 
-#main div {
+
+#main div{
     grid-area: main;
-    
 }
 
 .front {
@@ -84,7 +84,7 @@ a{
 .projects {
     direction: rtl;
     padding-right: 5vw;
-    list-style-type:none;
+    list-style-type: none;
     filter: opacity(40%);
 }
 
@@ -94,13 +94,11 @@ img {
     width: 10vw;
 }
 
+
 .info {
     display: flex;
     justify-content: center;
-
 }
-
-
 
 #gallery {
     background-size: cover;
@@ -115,19 +113,33 @@ img {
 }
 
 @keyframes move {
-    0% {background-image: url(pok.jpg);}
-    25%{background-image: url(mohamad.jpg);}
-    50%{background-image: url(sasha.jpg);}
-    75%{background-image: url(sagu.jpg);}
-    100%{background-image: url(valeriia.jpg);}
+    0% {
+        background-image: url(pok.jpg);
+    }
+
+    25% {
+        background-image: url(mohamad.jpg);
+    }
+
+    50% {
+        background-image: url(sasha.jpg);
+    }
+
+    75% {
+        background-image: url(sagu.jpg);
+    }
+
+    100% {
+        background-image: url(valeriia.jpg);
+    }
 
 }
 
 
 #footer {
-        grid-area: footer;
-        min-height: 10vh;
-        display: flex;
-        justify-content: space-around;
-        color: rgb(238, 224, 191);
-    }
+    grid-area: footer;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(238, 224, 191);
+}
