@@ -104,33 +104,30 @@ img {
     background-size: cover;
     background-position-y: center;
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 3s;
+    animation-delay: 5s;
     height: 40vh;
 
 }
 
 @keyframes move {
+
     0% {
-        background-image: url(pok.jpg);
+        background-image: url(1.jpeg);
     }
 
     25% {
-        background-image: url(mohamad.jpg);
+        background-image: url(3.JPG);
     }
 
     50% {
-        background-image: url(sasha.jpg);
-    }
-
-    75% {
-        background-image: url(sagu.jpg);
+        background-image: url(4.jpg);
     }
 
     100% {
-        background-image: url(valeriia.jpg);
+        background-image: url(7.JPG);
     }
 
 }
